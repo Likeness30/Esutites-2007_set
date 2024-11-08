@@ -1,0 +1,29 @@
+<!-- accounts/templates/accounts/index.html -->
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="text-center mt-8">
+    <h1 class="text-4xl font-bold">Welcome to Esutites (Economics Set 2007)</h1>
+    <p class="mt-4">Connecting old classmates and providing a platform for community and opportunities.</p>
+    
+    <div class="mt-8 flex justify-center space-x-4">
+        <a href="{% url 'register' %}" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Sign Up</a>
+        <a href="{% url 'login' %}" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Log In</a>
+    </div>
+    
+    <div class="mt-8">
+        <h2 class="text-2xl font-semibold">Explore</h2>
+        <ul class="mt-4 space-y-2">
+            <li><a href="#" class="text-blue-700 hover:underline">Job Board</a></li>
+            <li><a href="#" class="text-blue-700 hover:underline">Blog Posts</a></li>
+            <li><a href="#" class="text-blue-700 hover:underline">Advertisements</a></li>
+        </ul>
+    </div>
+
+    <div class="mt-8">
+        <h2 class="text-2xl font-semibold">Join Our WhatsApp Community</h2>
+        <a href="https://chat.whatsapp.com/YourWhatsAppLinkHere" class="text-green-500 hover:underline" target="_blank">Click here to join</a>
+    </div>
+</div>
+{% endblock %}

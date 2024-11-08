@@ -1,0 +1,49 @@
+<!-- accounts/templates/base.html -->
+{% load static %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esutites Network</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-xl font-bold">Esutites Network</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <br>
+    
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 text-center mt-8">
+        <p>&copy; Powered by DevSoftLanding (2024 Esutites Network)</p>
+    </footer>
+
+</body>
+</html>
+
